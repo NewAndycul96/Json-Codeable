@@ -1,15 +1,24 @@
 //
-//  JsonViewController.swift
+//  InventoryDetailsViewController.swift
 //  Json Codeable
 //
-//  Created by Anand Kulkarni on 11/29/18.
+//  Created by Anand Kulkarni on 11/30/18.
 //  Copyright © 2018 Anand Kulkarni. All rights reserved.
 //
 
 import UIKit
 
-class JsonViewController: UIViewController {
+class InventoryDetailsViewController: UIViewController {
 
+    var inventory: Inventory?
+    
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var category: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var stockQuantity: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

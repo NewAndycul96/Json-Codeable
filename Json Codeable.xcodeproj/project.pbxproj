@@ -14,7 +14,14 @@
 		16DB7A6C21B04D370059037A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DB7A6A21B04D370059037A /* LaunchScreen.storyboard */; };
 		16DB7A7721B04D370059037A /* Json_CodeableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A7621B04D370059037A /* Json_CodeableTests.swift */; };
 		16DB7A8221B04D370059037A /* Json_CodeableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A8121B04D370059037A /* Json_CodeableUITests.swift */; };
-		16DB7A9021B04D520059037A /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A8F21B04D520059037A /* JsonViewController.swift */; };
+		16DB7A9321B1900B0059037A /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9221B1900B0059037A /* InventoryViewController.swift */; };
+		16DB7A9521B190360059037A /* InventoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9421B190360059037A /* InventoryDetailsViewController.swift */; };
+		16DB7A9721B191570059037A /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9621B191570059037A /* Id.swift */; };
+		16DB7A9921B193530059037A /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 16DB7A9821B193530059037A /* inventory.json */; };
+		16DB7A9B21B193900059037A /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9A21B193900059037A /* Inventory.swift */; };
+		16DB7A9D21B198D30059037A /* inventoryJsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9C21B198D30059037A /* inventoryJsonLoader.swift */; };
+		16DB7A9F21B198F60059037A /* InventoryJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7A9E21B198F60059037A /* InventoryJsonParser.swift */; };
+		16DB7AA121B1B7250059037A /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB7AA021B1B7250059037A /* InventoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +55,14 @@
 		16DB7A7D21B04D370059037A /* Json CodeableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Json CodeableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DB7A8121B04D370059037A /* Json_CodeableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json_CodeableUITests.swift; sourceTree = "<group>"; };
 		16DB7A8321B04D370059037A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16DB7A8F21B04D520059037A /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
+		16DB7A9221B1900B0059037A /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		16DB7A9421B190360059037A /* InventoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailsViewController.swift; sourceTree = "<group>"; };
+		16DB7A9621B191570059037A /* Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		16DB7A9821B193530059037A /* inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
+		16DB7A9A21B193900059037A /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		16DB7A9C21B198D30059037A /* inventoryJsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryJsonLoader.swift; sourceTree = "<group>"; };
+		16DB7A9E21B198F60059037A /* InventoryJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryJsonParser.swift; sourceTree = "<group>"; };
+		16DB7AA021B1B7250059037A /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,12 @@
 		16DB7A5D21B04D360059037A /* Json Codeable */ = {
 			isa = PBXGroup;
 			children = (
+				16DB7A9121B05AAA0059037A /* Model */,
 				16DB7A5E21B04D360059037A /* AppDelegate.swift */,
 				16DB7A6221B04D360059037A /* Main.storyboard */,
-				16DB7A8F21B04D520059037A /* JsonViewController.swift */,
+				16DB7A9221B1900B0059037A /* InventoryViewController.swift */,
+				16DB7AA021B1B7250059037A /* InventoryTableViewCell.swift */,
+				16DB7A9421B190360059037A /* InventoryDetailsViewController.swift */,
 				16DB7A6821B04D370059037A /* Assets.xcassets */,
 				16DB7A6A21B04D370059037A /* LaunchScreen.storyboard */,
 				16DB7A6D21B04D370059037A /* Info.plist */,
@@ -126,6 +143,18 @@
 				16DB7A8321B04D370059037A /* Info.plist */,
 			);
 			path = "Json CodeableUITests";
+			sourceTree = "<group>";
+		};
+		16DB7A9121B05AAA0059037A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16DB7A9821B193530059037A /* inventory.json */,
+				16DB7A9621B191570059037A /* Id.swift */,
+				16DB7A9A21B193900059037A /* Inventory.swift */,
+				16DB7A9C21B198D30059037A /* inventoryJsonLoader.swift */,
+				16DB7A9E21B198F60059037A /* InventoryJsonParser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DB7A9921B193530059037A /* inventory.json in Resources */,
 				16DB7A6C21B04D370059037A /* LaunchScreen.storyboard in Resources */,
 				16DB7A6921B04D370059037A /* Assets.xcassets in Resources */,
 				16DB7A6421B04D360059037A /* Main.storyboard in Resources */,
@@ -260,8 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DB7A5F21B04D360059037A /* AppDelegate.swift in Sources */,
+				16DB7AA121B1B7250059037A /* InventoryTableViewCell.swift in Sources */,
+				16DB7A9321B1900B0059037A /* InventoryViewController.swift in Sources */,
+				16DB7A9B21B193900059037A /* Inventory.swift in Sources */,
+				16DB7A9D21B198D30059037A /* inventoryJsonLoader.swift in Sources */,
 				16DB7A6721B04D360059037A /* Json_Codeable.xcdatamodeld in Sources */,
-				16DB7A9021B04D520059037A /* JsonViewController.swift in Sources */,
+				16DB7A9F21B198F60059037A /* InventoryJsonParser.swift in Sources */,
+				16DB7A9521B190360059037A /* InventoryDetailsViewController.swift in Sources */,
+				16DB7A9721B191570059037A /* Id.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
